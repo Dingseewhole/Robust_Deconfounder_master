@@ -1,15 +1,15 @@
-# InterD
-This is the official pytorch implementation of InterD, a debiasing method for recommendation system. InterD is proposed in the paper:
+# Robust Deconfounder
+This is a pytorch implementation of Robust Deconfounder (RD), a robust debiasing method for recommendation system. Robust Deconfounder is proposed in the paper:
 
-[Interpolative Distillation for Unifying Biased and Debiased Recommendation]
+[Addressing Unmeasured Confounder for Recommendation with Sensitivity Analysis]
 
-by  Sihao Ding, Fuli Feng, Xiangnan He, Jinqiu Jin, Wenjie Wang, Yong Liao and Yongdong Zhang
+by  Sihao Ding, Peng Wu, Fuli Feng, Xiangnan He, Yitong Wang, Yong Liao and Yongdong Zhang
 
-Published at SIGIR 2022. If you use this code please cite our paper.
+Published at SIGKDD 2022. If you use this code please cite our paper.
 
 ## Introduction
 
-InterD is a method that unifies biased and debiased methods as teachers to ahcieve strong performance on both normal biased test and debiased test with alleviating over-debiased issue and bias amplification issue in recommendation.
+RD is a method that combats the unmeasured confounder based on propensity-based recommender models. We use sensitivity analysis to estimate the effect of unmeasured confounders, and employ the adversarial learning mechanism to train amodel that more robusts to unmeasured confounders.
 
 ## Environment Requirement
 
@@ -29,11 +29,16 @@ We use public/private dataset.
 - random.txt: unbiased data collected by stochastic policy where items are assigned to users randomly. Each line in the file is user ID, item ID, rating of the user to the item. 
 
 ## Run the Code
-You can quickly reproduced the results on Yahoo!R3 with the default parameters by the command:
+You can quickly reproduced the results of IPS-MF on Yahoo!R3 and Coat with the command:
 ```shell
-python train_explicit.py --dataset yahooR3
+python IPS.py --dataset yahooR3
 ```
+and
+```shell
+python IPS.py --dataset coat
+```
+
 To implement this code with other teacher models or with on other datasets you may need to fine-tune the hypermenters, and you can find out all hypermenters you need in _arguments.py_.
 
 ## Acknowledgment
-Some parts of this repository are adopted from AutoDebias and Meta-learning, you can find more information in https://github.com/DongHande/AutoDebias and https://github.com/AdrienLE.
+Some parts of this repository are adopted from AutoDebias and Meta-learning, you can find more information in https://github.com/DongHande/AutoDebias and https://github.com/AdrienLE. Thanks for the contributions!
