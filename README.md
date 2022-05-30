@@ -9,7 +9,7 @@ Published at SIGKDD 2022. If you use this code please cite our paper.
 
 ## Introduction
 
-RD is a method that combats the unmeasured confounder based on propensity-based recommender models. We use sensitivity analysis to estimate the effect of unmeasured confounders, and employ the adversarial learning mechanism to train amodel that more robusts to unmeasured confounders.
+RD is a method that combats the unmeasured confounder based on propensity-based recommender models. We use sensitivity analysis to estimate the effect of unmeasured confounders, and employ the adversarial learning mechanism to train a model that more robusts to unmeasured confounders.
 
 ## Environment Requirement
 
