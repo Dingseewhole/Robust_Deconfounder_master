@@ -29,21 +29,26 @@ We use public/private dataset.
 - random.txt: unbiased data collected by stochastic policy where items are assigned to users randomly. Each line in the file is user ID, item ID, rating of the user to the item. 
 
 ## Run the Code
-You can quickly reproduced the results of IPS on Yahoo!R3 and Coat with the command:
+You can quickly reproduced the results of IPS on Yahoo!R3 or Coat with the command:
 ```shell
 python IPS.py --dataset yahooR3 or coat
 ```
 
 
-You can quickly reproduced the results of Robust Deconfounder IPS (RD-IPS) on Yahoo!R3 and Coat with the command:
+You can quickly reproduced the results of Robust Deconfounder IPS (RD-IPS) on Yahoo!R3 or Coat with the command:
 ```shell
 python IPS_RD.py --dataset yahooR3 or coat
 ```
 
-You can quickly reproduced the results of Robust Deconfounder Doubly Robust (RD-DR) on Yahoo!R3 and Coat with the command:
+You can quickly reproduced the results of Robust Deconfounder Doubly Robust (RD-DR) on Yahoo!R3 or Coat with the command:
 ```shell
 python DR_RD.py --dataset yahooR3 or coat
 ```
+You can quickly reproduced the results of AutoDebias on Yahoo!R3 or Coat with the command:
+```shell
+python Autodebias.py --dataset yahooR3 or coat
+```
+
 
 To implement this code with other teacher models or with on other datasets you may need to fine-tune the hypermenters, and you can find out all hypermenters you need in _arguments.py_.
 
