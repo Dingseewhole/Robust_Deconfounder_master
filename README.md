@@ -41,6 +41,7 @@ python IPS_RD.py --dataset yahooR3 or coat
 You can quickly reproduced the results of Doubly Robust (DR) on Yahoo!R3 or Coat with the command:
 ```shell
 python DR.py --dataset yahooR3 or coat
+```
 You can quickly reproduced the results of Robust Deconfounder Doubly Robust (RD-DR) on Yahoo!R3 or Coat with the command:
 ```shell
 python DR_RD.py --dataset yahooR3 or coat
