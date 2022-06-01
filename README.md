@@ -37,6 +37,10 @@ You can quickly reproduced the results of Robust Deconfounder IPS (RD-IPS) on Ya
 ```shell
 python IPS_RD.py --dataset yahooR3 or coat
 ```
+You can quickly reproduced the results of Benchmarked Robust Deconfounder IPS (BRD-IPS) on Yahoo!R3 or Coat with the command:
+```shell
+python IPS_BRD.py --dataset yahooR3 or coat
+```
 
 You can quickly reproduced the results of Doubly Robust (DR) on Yahoo!R3 or Coat with the command:
 ```shell
@@ -46,6 +50,10 @@ You can quickly reproduced the results of Robust Deconfounder Doubly Robust (RD-
 ```shell
 python DR_RD.py --dataset yahooR3 or coat
 ```
+You can quickly reproduced the results of Benchmarked Robust Deconfounder DR (BRD-DR) on Yahoo!R3 or Coat with the command:
+```shell
+python DR_BRD.py --dataset yahooR3 or coat
+```
 
 You can quickly reproduced the results of AutoDebias on Yahoo!R3 or Coat with the command:
 ```shell
@@ -53,7 +61,11 @@ python Autodebias.py --dataset yahooR3 or coat
 ```
 You can quickly reproduced the results of Robust Deconfounder AutoDebias (RD-AutoDebias) on Yahoo!R3 or Coat with the command:
 ```shell
-python RD_Autodebias.py --dataset yahooR3 or coat
+python Autodebias_RD.py --dataset yahooR3 or coat
+```
+You can quickly reproduced the results of Benchmarked Robust Deconfounder AutoDebias (BRD-AutoDebias) on Yahoo!R3 or Coat with the command:
+```shell
+python Autosebias_BRD.py --dataset yahooR3 or coat
 ```
 
 To implement this code with other teacher models or with on other datasets you may need to fine-tune the hypermenters, and you can find out all hypermenters you need in _arguments.py_.
